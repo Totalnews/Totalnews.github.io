@@ -1,6 +1,6 @@
 ---
-layout: home
+layout: default
+title: Home
 ---
 
-Welcome to **Total News**  
-*Daily news updates by Aare Ayobami Abegunde (JP)*
+## Latest News
