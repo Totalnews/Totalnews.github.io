@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Totalnews/Totalnews.github.io
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://totalnews.github.io
+display_url: https://totalnews.github.io
+
+collections:
+  - name: "news"
+    label: "News Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "categories", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
